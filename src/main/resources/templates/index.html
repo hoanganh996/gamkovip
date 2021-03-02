@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.springframework.org/schema/data/jaxb">
+
+
+<head>
+    <title>Gamvip.com - Cổng Game Quốc Tế</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <meta property="og:title" content="Gamvip.com - Cổng Game Quốc Tế"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://gamvip.com/"/>
+    <meta property="og:image" content="../gamvip.com/assets/images/portal/downloadapp/icon-app.png"/>
+    <meta property="og:description" content="Gamvip.com - Cổng Game Quốc Tế"/>
+    <meta property="fb:app_id" content="330110771096175"/>
+    <meta name="referrer" content="no-referrer"/>
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="assets/css/style.css" th:href="@{../assets/css/style.css}">
+    <link type="text/css" rel="stylesheet" href="../css/main.997edd3b.css" th:href="@{../css/main.997edd3b.css}">
+</head>
+
+<body class="code-g code-g88">
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root">
+    <div class="container">
+        <div>
+            <div id="divLoading" class="app" style="display: none; zoom: 0.454167;">
+                <div class="loading"><span class="logo"></span><span class="loading-bar"></span><span
+                        class="loading-progress"><span class="loading-percent" style="width: 0%;"></span><span
+                        class="loading-text">0%</span></span></div>
+            </div>
+            <div class="resizeable spinner" style="display: none; zoom: 0.726667;">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+                <div class="bounce4"></div>
+                <div class="bounce5"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="app" style="zoom: 0.454167;">
+                <div id="divHeader" class="header">
+                    <div class="login">
+                        <form th:object="${user}" th:action="@{save}" action="#" method="post">
+                            <span class="logo"></span>
+                            <span class="text-login">Đăng nhập</span>
+                            <span
+                                    class="button button-blue"><i class="ic-fb"></i></span>
+                            <span class="button button-red"><i
+                                    class="ic-g"></i></span>
+                            <span class="button button-vichat"><i
+                                    class="ic-vichat"></i></span>
+                            <span class="input name" th:for="username"><input th:field="*{username}" placeholder="Tên tài khoản" class="form-control" name="txtUsername" type="text"></span>
+                            <span class="input password" th:for="password"><input th:field="*{password}" placeholder="Mật khẩu" class="form-control" name="txtPassword" type="password"></span>
+                            <div class="other"><span>Đăng ký</span> | <span>Quên mật khẩu</span></div>
+                            <span class="button button-cog"><i class="ic-cog"></i></span>
+                            <input type="submit" class="button button-login" value="Đăng nhập"/>
+                        </form>
+                    </div>
+                </div>
+                <div class="main"><span class="shadow-horizontal"></span><span class="shadow-vertical"></span>
+                    <div class="annoucement"></div>
+                    <div>
+                        <div class="game-category">
+                            <div class="category-column"><span class="game game-card"></span></div>
+                            <div class="category-column"><span class="game game-slots"></span></div>
+                            <div class="category-column"><span class="game game-casino"></span></div>
+                            <div class="category-column"><span class="game game-skills"></span></div>
+                            <div class="category-column"><span class="game game-lottery"></span></div>
+                            <div class="category-column"><span class="game game-sport"></span></div>
+                        </div>
+                        <div class="banners">
+                            <div>
+                                <div class="react-slideshow-container">
+                                    <div class="react-slideshow-wrapper slide">
+                                        <div class="images-wrap" style="transform: translate(-897px); width: 2093px;">
+                                            <div data-index="-1" style="width: 299px;">
+                                                <div class="banner each-slide" style="text-align: center;"><a
+                                                        href="#/skill/ott" target=""><img
+                                                        src="/static/assets/images/banner/bn-ott.png"></a></div>
+                                            </div>
+                                            <div data-index="0" class="" style="width: 299px;">
+                                                <div class="banner each-slide" style="text-align: center;"><span
+                                                        style="cursor: pointer;"><img
+                                                        src="/static/assets/images/banner/bn-vinchat.png"></span></div>
+                                            </div>
+                                            <div data-index="1" class="" style="width: 299px;">
+                                                <div class="banner each-slide" style="text-align: center;"><a
+                                                        href="#/tournament/poker" target=""><img
+                                                        src="/static/assets/images/banner/bn-pt.png"></a></div>
+                                            </div>
+                                            <div data-index="2" class="active" style="width: 299px;">
+                                                <div class="banner each-slide" style="text-align: center;"><a
+                                                        href="#/tournament/tlmn" target=""><img
+                                                        src="/static/assets/images/banner/bn-tlmn.png"></a></div>
+                                            </div>
+                                            <div data-index="3" class="" style="width: 299px;">
+                                                <div class="banner each-slide" style="text-align: center;"><a
+                                                        href="#/tournament/sam" target=""><img
+                                                        src="/static/assets/images/banner/bn-sam.png"></a></div>
+                                            </div>
+                                            <div data-index="4" class="" style="width: 299px;">
+                                                <div class="banner each-slide" style="text-align: center;"><a
+                                                        href="#/skill/ott" target=""><img
+                                                        src="/static/assets/images/banner/bn-ott.png"></a></div>
+                                            </div>
+                                            <div data-index="-1" style="width: 299px;">
+                                                <div class="banner each-slide" style="text-align: center;"><span
+                                                        style="cursor: pointer;"><img
+                                                        src="/static/assets/images/banner/bn-vinchat.png"></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="button lobby-tournament"><i class="txt1"></i><i class="txt2"></i><i class="txt3"></i><i
+                            class="txt4"></i><i class="txt5"></i><i class="txt6"></i><i class="txt7"></i><i
+                            class="txt8"></i><i class="txt9"></i><i class="txt10"></i></div>
+                    <div class="button button-agency disabled"><span class="ic-agency"></span></div>
+                    <a class="_88vin" target="_blank" href="/gamvip.com/88.vin"></a>
+                    <div class="buttons">
+                        <div class="button button-support disabled"><i class="ic-support"></i><span
+                                class="text">Hỗ trợ</span></div>
+                        <div class="button button-gift disabled"><i class="ic-gift"></i><span
+                                class="text">Giftcode</span></div>
+                        <div class="button button-inbox disabled"><i class="ic-inbox"></i><span
+                                class="text">Hộp thư</span></div>
+                        <div class="button button-secure disabled"><i class="ic-secure"></i><span
+                                class="text">Bảo mật</span></div>
+                        <div class="button button-download"><i class="ic-download"></i><span class="text">Tải app</span>
+                        </div>
+                        <div class="button button-card disabled"><i class="ic-bar-card"></i><span
+                                class="text">Đổi thẻ</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="app mini-game" style="zoom: 0.454167;"><span
+                class="button button-jackpot ui-draggable ui-draggable-handle" id="iconListJp"></span>
+            <div class="event-jackpot ui-draggable"><span class="button-ej ui-draggable-handle"></span>
+                <ul class="list-ej">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="popup-jackpot" id="popupJackpot">
+                <div class="bg-mesh"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                <span class="button button-close" id="close-popup-jackpot"></span>
+                <div class="content">
+                    <div class="jackpot-tab-controllers"><span class="button tab tab-jackpot active"
+                                                               data-index="0"><span
+                            class="text-list-jackpot"></span></span><span class="button tab" data-index="1"><span
+                            data-index="1">Sự kiện</span></span><span class="button tab" data-index="2"><span
+                            data-index="2">Vinh danh</span></span><span class="button tab" data-index="3"><span
+                            data-index="3">Hũ của tôi</span></span><span class="button tab" data-index="4"><span
+                            data-index="4">Hướng dẫn</span></span></div>
+                    <div class="jackpot-tabs tabs">
+                        <div class="tab tab-ls-jp">
+                            <ul class="jackpot-head">
+                                <li class="name">Game</li>
+                                <li class="room">Phòng 10K</li>
+                                <li class="room">Phòng 1K</li>
+                                <li class="room">Phòng 100</li>
+                            </ul>
+                            <ul class="jackpot-body"></ul>
+                        </div>
+                        <div class="tab">
+                            <div class="box-side">
+                                <div class="side-left" id="list-events-id">
+                                    <div class="list-row" data-id="0"><span data-id="0">+ Sự kiện X6 Jackpot</span>
+                                    </div>
+                                    <div class="list-row" data-id="1"><span data-id="1">+ Sự kiện tiên tri</span></div>
+                                    <div class="list-row" data-id="2"><span data-id="2">+ Chơi hay nhận ngay SH</span>
+                                    </div>
+                                    <div class="list-row" data-id="3"><span data-id="3">+ Vé số vàng</span></div>
+                                    <div class="list-row" data-id="4"><span data-id="4">+ Săn bài đẹp kẹp Iphone</span>
+                                    </div>
+                                    <div class="list-row" data-id="5"><span data-id="5">+ Chơi game Phục Sinh, lung linh X2</span>
+                                    </div>
+                                </div>
+                                <div class="side-right">
+                                    <div class="tabs">
+                                        <div class="tab active">
+                                            <div class="box-scroll" id="ljp-ct-event"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <div class="tab-controls" data-tab-control="price-tab"><span class="tab-control active"
+                                                                                         data-room="3">10K</span><span
+                                    class="tab-control" data-room="2">1K</span><span class="tab-control" data-room="1">100</span><span
+                                    class="tab-control" data-room="0">Khác</span></div>
+                            <div class="tabs" data-tab="price-tab">
+                                <div class="tab active">
+                                    <table class="table" cellpadding="0" cellspacing="0">
+                                        <thead>
+                                        <tr>
+                                            <th align="center">
+                                                <div class="box-filter"><span id="box-filter-name">Tất cả</span><i
+                                                        class="ic-sort down"></i>
+                                                    <div class="list-dropdown" id="ljp-lgame"></div>
+                                                </div>
+                                            </th>
+                                            <th align="center">Thời gian</th>
+                                            <th align="center">TÀI KHOẢN</th>
+                                            <th align="center">X Jackpot</th>
+                                            <th align="center">TIỀN THẮNG</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody id="tbody-ljp-vd"></tbody>
+                                    </table>
+                                    <div class="page-ljp pages" id="ljp-vd-pager"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab"><p class="current-name"></p>
+                            <div class="bang">
+                                <table class="table" cellpadding="0" cellspacing="0">
+                                    <thead>
+                                    <tr>
+                                        <th align="center"></th>
+                                        <th align="center">Phiên</th>
+                                        <th align="center">Thời gian</th>
+                                        <th align="center">TÀI KHOẢN</th>
+                                        <th align="center">X Jackpot</th>
+                                        <th align="center">TIỀN THẮNG</th>
+                                        <th align="center"></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="tbody-ljp-own"></tbody>
+                                </table>
+                            </div>
+                            <div class="page-ljp pages" id="ljp-own-pager"></div>
+                        </div>
+                        <div class="tab">
+                            <div class="box-side">
+                                <div class="side-left" id="list-guides-id">
+                                    <div class="list-row" data-id="0"><span data-id="0">+ Tài xỉu</span></div>
+                                    <div class="list-row" data-id="1"><span data-id="1">+ Minipoker</span></div>
+                                    <div class="list-row" data-id="2"><span data-id="2">+ Cao thấp</span></div>
+                                    <div class="list-row" data-id="3"><span data-id="3">+ Phục sinh</span></div>
+                                    <div class="list-row" data-id="4"><span data-id="4">+ Lucky Wild</span></div>
+                                    <div class="list-row" data-id="5"><span data-id="5">+ Bầu cua</span></div>
+                                    <div class="list-row" data-id="6"><span data-id="6">+ Xổ số</span></div>
+                                    <div class="list-row" data-id="7"><span data-id="7">+ 3 Cây</span></div>
+                                    <div class="list-row" data-id="8"><span data-id="8">+ Poker</span></div>
+                                    <div class="list-row" data-id="9"><span data-id="9">+ TLMN</span></div>
+                                    <div class="list-row" data-id="10"><span data-id="10">+ Sâm</span></div>
+                                    <div class="list-row" data-id="11"><span data-id="11">+ Mậu Binh</span></div>
+                                    <div class="list-row" data-id="12"><span data-id="12">+ Catte</span></div>
+                                    <div class="list-row" data-id="13"><span data-id="13">+ Xóc xóc</span></div>
+                                    <div class="list-row" data-id="14"><span data-id="14">+ Black Jack</span></div>
+                                    <div class="list-row" data-id="15"><span data-id="15">+ Rồng hổ</span></div>
+                                    <div class="list-row" data-id="16"><span data-id="16">+ Bacarrat</span></div>
+                                    <div class="list-row" data-id="17"><span data-id="17">+ Sicbo</span></div>
+                                    <div class="list-row" data-id="18"><span data-id="18">+ Roulette</span></div>
+                                </div>
+                                <div class="side-right">
+                                    <div class="tabs">
+                                        <div class="tab active">
+                                            <div class="box-scroll" id="ljp-ct-guide"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="app not-bg not-show" style="zoom: 0.454167;"></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="../lib/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../lib/vendors.js"></script>
+<script type="text/javascript" src="../lib/libs.min.js"></script>
+<script type="text/javascript" src="../lib/fingerprint2.min.js"></script>
+<script type="text/javascript" src="../lib/slick.min.js"></script>
+<script type="text/javascript" src="../js/main.9797ad2c.js" th:src="@{../js/main.9797ad2c.js}"></script>
+<script src="../slots/dancing/js/dancing.min.js" th:src="@{../slots/dancing/js/dancing.min.js}"></script>
+<script src="../slots/forest/js/forest.min.js"></script>
+<script src="../slots/fortune/js/fortune.min.js"></script>
+<script src="../slots/kingdom/js/kingdom.min.js"></script>
+<script src="../slots/ocean/js/ocean.min.js"></script>
+<script src="../slots/oracle/js/oracle.min.js"></script>
+<script src="../slots/predict/js/predict.min.js"></script>
+<div>
+    <div class="grecaptcha-badge" data-style="bottomright"
+         style="width: 256px; height: 60px; position: fixed; visibility: hidden; display: block; transition: right 0.3s ease 0s; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;">
+        <div class="grecaptcha-logo">
+            <iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcMm78UAAAAANo2RUE6XJCkIdHwUYo4oQMWiBOZ&amp;co=aHR0cHM6Ly8xZzg4Lm5ldDo0NDM.&amp;hl=vi&amp;v=2Mfykwl2mlvyQZQ3PEgoH710&amp;size=invisible&amp;cb=n8hs0l2ns68y"
+                    width="256" height="60" role="presentation" name="a-k7su0fswgt5t" frameborder="0" scrolling="no"
+                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+        </div>
+        <div class="grecaptcha-error"></div>
+        <textarea id="g-recaptcha-response-100000" name="g-recaptcha-response" class="g-recaptcha-response"
+                  style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+    </div>
+    <iframe style="display: none;"></iframe>
+</div>
+</body>
+
+
+</html>
